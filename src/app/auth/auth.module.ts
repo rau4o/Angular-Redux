@@ -11,6 +11,7 @@ import {RegisterEffect} from './store/effects/register.effect';
 import {BackendErrorMessagesModule} from '../shared/modules/backend-error-messages/backend-error-messages.module';
 import {PersistanceService} from '../shared/services/persistance.service';
 import {LoginEffect} from './store/effects/login.effect';
+import { LoginComponent } from './components/login/login.component';
 
 const router: Routes = [
   {
@@ -19,12 +20,14 @@ const router: Routes = [
   },
   {
     path: 'login',
+    component: LoginComponent
   }
 ];
 
 @NgModule({
   declarations: [
-    RegisterComponent
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     CommonModule,
