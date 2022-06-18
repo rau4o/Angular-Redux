@@ -1,6 +1,7 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import { TopBarComponent } from './components/top-bar/top-bar.component';
+import {RouterModule} from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { TopBarComponent } from './components/top-bar/top-bar.component';
     TopBarComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ]
 })
 export class TopBarModule {}
