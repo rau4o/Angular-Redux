@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GlobalFeedComponent implements OnInit {
 
+  public apiUrl = '/articles';
+
   constructor() { }
 
   ngOnInit(): void {
