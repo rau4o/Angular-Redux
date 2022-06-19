@@ -4,6 +4,9 @@ import { RouterModule } from '@angular/router';
 
 import { FeedModule } from '../shared/modules/feed/feed.module';
 import { GlobalFeedComponent } from './components/global-feed/global-feed.component';
+import {BannerModule} from '../shared/modules/banner/banner.module';
+import {ErrorMessageModule} from '../shared/modules/errorMessage/errorMessage.module';
+import {LoadingModule} from '../shared/modules/loading/loading.module';
 
 const routes = [
   {
@@ -16,7 +19,8 @@ const routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
-    FeedModule
+    FeedModule,
+    BannerModule,
   ],
   declarations: [
     GlobalFeedComponent

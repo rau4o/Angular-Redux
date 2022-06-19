@@ -14,9 +14,9 @@ export class FeedComponent implements OnInit {
 
   @Input('apiUrl') apiUrlProps: string;
 
-  isLoading$: Observable<boolean>;
-  error$: Observable<string | null>;
-  feed$: Observable<GetFeedResponseInterface | null>;
+  public isLoading$: Observable<boolean>;
+  public error$: Observable<string | null>;
+  public feed$: Observable<GetFeedResponseInterface | null>;
 
   constructor(private store: Store) { }
 
