@@ -7,6 +7,7 @@ import { GlobalFeedComponent } from './components/global-feed/global-feed.compon
 import {BannerModule} from '../shared/modules/banner/banner.module';
 import {ErrorMessageModule} from '../shared/modules/errorMessage/errorMessage.module';
 import {LoadingModule} from '../shared/modules/loading/loading.module';
+import {PopularTagsModule} from '../shared/modules/popular-tags/popularTags.module';
 
 const routes = [
   {
@@ -21,6 +22,7 @@ const routes = [
     RouterModule.forChild(routes),
     FeedModule,
     BannerModule,
+    PopularTagsModule
   ],
   declarations: [
     GlobalFeedComponent

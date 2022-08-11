@@ -16,11 +16,9 @@ import {GlobalFeedModule} from './globalFeed/globalFeed.module';
 import {PaginationModule} from './shared/modules/pagination/pagination.module';
 import {routerReducer, StoreRouterConnectingModule} from '@ngrx/router-store';
 
-
 @NgModule({
   declarations: [
     AppComponent,
-
   ],
   imports: [
     BrowserModule,
