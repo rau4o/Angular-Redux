@@ -8,6 +8,7 @@ import {BannerModule} from '../shared/modules/banner/banner.module';
 import {ErrorMessageModule} from '../shared/modules/errorMessage/errorMessage.module';
 import {LoadingModule} from '../shared/modules/loading/loading.module';
 import {PopularTagsModule} from '../shared/modules/popular-tags/popularTags.module';
+import {FeedTogglerModule} from '../shared/modules/feed-toggler/feedToggler.module';
 
 const routes = [
   {
@@ -22,7 +23,8 @@ const routes = [
     RouterModule.forChild(routes),
     FeedModule,
     BannerModule,
-    PopularTagsModule
+    PopularTagsModule,
+    FeedTogglerModule
   ],
   declarations: [
     GlobalFeedComponent
