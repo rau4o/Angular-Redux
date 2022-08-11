@@ -13,24 +13,30 @@ import {TopBarModule} from './shared/modules/topBar/topBar.module';
 import {PersistanceService} from './shared/services/persistance.service';
 import {AuthInterceptor} from './shared/services/authInterceptor.service';
 import {GlobalFeedModule} from './globalFeed/globalFeed.module';
+import {PaginationModule} from './shared/modules/pagination/pagination.module';
+import {routerReducer, StoreRouterConnectingModule} from '@ngrx/router-store';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AuthModule,
     HttpClientModule,
-    StoreModule.forRoot({}),
+    StoreModule.forRoot({router: routerReducer}),
     EffectsModule.forRoot([]),
     StoreDevtoolsModule.instrument({
       maxAge: 25,
       logOnly: environment.production
     }),
+    StoreRouterConnectingModule.forRoot(),
     TopBarModule,
-    GlobalFeedModule
+    GlobalFeedModule,
+    PaginationModule,
   ],
   providers: [
     PersistanceService,
